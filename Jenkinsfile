@@ -9,7 +9,7 @@ pipeline {
         }
           stage('Testing') {
             steps {
-                checkout scmGit(branches: [[name: '*/main']], extensions: [], userRemoteConfigs: [[url: 'https://github.com/jeevanreddymaru123/SeleniumGrid.git']])
+                checkout scmGit(branches: [[name: '*/main']], extensions: [], userRemoteConfigs: [[url: 'https://github.com/jeevanreddymaru123/SeleniumGridwithDockerTest.git']])
                 sh 'mvn clean test'
             }
         }
